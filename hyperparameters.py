@@ -11,14 +11,15 @@ import os
 import sys
 pwd = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(pwd)
-from classifier_multi_label_textcnn.utils import load_vocabulary
+from utils import load_vocabulary
 
 
 class Hyperparamters:
     # Train parameters
-    num_train_epochs = 50  # 由于训练集较少，所以模型拟合需要更多是epoch。
+    # num_train_epochs = 50  # 由于训练集较少，所以模型拟合需要更多是epoch。
+    num_train_epochs = 10  # 由于训练集较少，所以模型拟合需要更多是epoch。
     print_step = 100
-    batch_size = 64           
+    batch_size = 8
     summary_step = 10
     num_saved_per_epoch = 3
     max_to_keep = 100

@@ -45,7 +45,7 @@ def save_txt(file,lines):
 
 
 def load_csv(file,header=None):
-    return pd.read_csv(file,encoding='utf-8',header=header,error_bad_lines=False)#,encoding='gbk'
+    return pd.read_csv(file,encoding='utf-8',header=header,error_bad_lines=False,delimiter='\t',quotechar='\t')#,encoding='gbk'
 
 
 def save_csv(dataframe,file,header=True,index=None,encoding="gbk"):

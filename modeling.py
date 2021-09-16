@@ -17,6 +17,7 @@ import numpy as np
 import six
 from six.moves import range
 import tensorflow as tf
+# from tensorflow.python.compiler.tensorrt import trt_convert as contrib_layers
 from tensorflow.contrib import layers as contrib_layers
 
 

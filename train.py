@@ -9,10 +9,10 @@ import os
 #os.environ["CUDA_VISIBLE_DEVICES"] = '-1'
 import numpy as np
 import tensorflow as tf
-from classifier_multi_label_textcnn.networks import NetworkAlbertTextCNN
-from classifier_multi_label_textcnn.classifier_utils import get_features
-from classifier_multi_label_textcnn.hyperparameters import Hyperparamters as hp
-from classifier_multi_label_textcnn.utils import select,time_now_string
+from networks import NetworkAlbertTextCNN
+from classifier_utils import get_features
+from hyperparameters import Hyperparamters as hp
+from utils import select,time_now_string
 
 
 

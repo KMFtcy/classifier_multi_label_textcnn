@@ -15,11 +15,11 @@ import tensorflow.compat.v1 as tf
 from tensorflow.contrib import tpu as contrib_tpu
 from tensorflow.contrib import data as contrib_data
 from tensorflow.contrib import metrics as contrib_metrics
-from classifier_multi_label_textcnn import modeling
-from classifier_multi_label_textcnn import optimization
-from classifier_multi_label_textcnn import tokenization
-from classifier_multi_label_textcnn.hyperparameters import Hyperparamters as hp
-from classifier_multi_label_textcnn.utils import load_csv
+import modeling
+import optimization
+import tokenization
+from hyperparameters import Hyperparamters as hp
+from utils import load_csv
 
 
 def label2id(label):

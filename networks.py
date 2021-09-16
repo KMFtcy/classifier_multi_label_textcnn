@@ -7,12 +7,12 @@ Created on Thu May 30 20:44:42 2019
 
 import os
 import tensorflow as tf
-from classifier_multi_label_textcnn import modeling
-from classifier_multi_label_textcnn import optimization
-from classifier_multi_label_textcnn.modules import cell_textcnn
-from classifier_multi_label_textcnn.utils import time_now_string
-from classifier_multi_label_textcnn.hyperparameters import Hyperparamters as hp
-from classifier_multi_label_textcnn.classifier_utils import ClassifyProcessor
+import modeling
+import optimization
+from modules import cell_textcnn
+from utils import time_now_string
+from hyperparameters import Hyperparamters as hp
+from classifier_utils import ClassifyProcessor
 
 
 num_labels = hp.num_labels
